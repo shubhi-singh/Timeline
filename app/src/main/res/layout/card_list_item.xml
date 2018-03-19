@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:padding="5dp"
+    android:gravity="center_vertical"
+
+    app:cardElevation="10dp"
+    app:cardMaxElevation="6dp"
+    app:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="10dp">
+
+
+    <LinearLayout
+
+
+        android:padding="1dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_gravity="center"
+           android:background="@color/black"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="2dp"
+            android:id="@+id/thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <com.example.android.vikramadityastimeline.PacificoFont
+            android:id="@+id/title"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:padding="5dp"
+            android:textSize="50sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/thumbnail" />
+
+
+           <android.support.constraint.ConstraintLayout
+
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <com.example.android.vikramadityastimeline.PacificoFont
+                   android:id="@+id/date"
+                   android:text="20/7/2017"
+                   android:padding="14dp"
+                   card_view:layout_constraintBottom_toBottomOf="parent"
+                   card_view:layout_constraintLeft_toLeftOf="parent"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   card_view:layout_constraintTop_toTopOf="parent"
+                   app:layout_editor_absoluteY="350dp"
+                   app:layout_editor_absoluteX="8dp" />
+            <ImageButton
+
+                android:id="@+id/imageButton"
+                android:layout_width="45dp"
+                android:layout_height="43dp"
+                card_view:srcCompat="@android:drawable/ic_menu_edit"
+                android:background="@color/white"
+                android:backgroundTintMode="multiply"
+
+
+                android:layout_alignBottom="@+id/imageButton2"
+                android:layout_alignTop="@+id/imageButton2"
+                android:layout_marginRight="47dp"
+                card_view:layout_constraintRight_toRightOf="parent"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="8dp"
+                card_view:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="8dp"
+                card_view:layout_constraintVertical_bias="0.909"
+                android:layout_marginEnd="8dp" />
+
+            <ImageButton
+                android:background="@color/white"
+
+                android:gravity="end"
+                android:layout_margin="4dp"
+                android:id="@+id/imageButton2"
+                android:layout_width="48dp"
+                android:layout_height="46dp"
+                card_view:srcCompat="@android:drawable/ic_menu_delete"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="8dp"
+                card_view:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="8dp"
+                card_view:layout_constraintVertical_bias="0.905"
+                android:layout_marginEnd="4dp"
+                card_view:layout_constraintRight_toLeftOf="@+id/imageButton"
+                android:layout_marginRight="8dp" />
+           </android.support.constraint.ConstraintLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
+
+
+
+

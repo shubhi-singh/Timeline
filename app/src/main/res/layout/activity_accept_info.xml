@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/info_img"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view2"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/white"
+        android:layout_margin="4dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="6dp"
+
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/iv_display"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"/>
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/white"
+                android:elevation="0dp"
+                android:onClick="showDatePickerDialog"
+                android:text="Add Date"
+                android:textColor="@color/colorPrimary"
+                />
+
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+        <LinearLayout
+            android:layout_below="@+id/card_view2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+            <com.example.android.vikramadityastimeline.PacificoFont
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Add a title !"/>
+            <EditText
+                android:id="@+id/et_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.example.android.vikramadityastimeline.PacificoFont
+                android:id="@+id/descriptio2n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Add description /message !"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/et_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+
+                android:elevation="10dp"
+
+
+                android:background="@drawable/rounded_button"
+                android:id="@+id/new_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add to Timeline !"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                />
+        </LinearLayout>
+
+
+</RelativeLayout>
